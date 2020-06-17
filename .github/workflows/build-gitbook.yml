@@ -49,4 +49,4 @@ jobs:
         git commit -m "update gh-page from github actions"
         git push --force  "https://${{ secrets.U_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" gh-page
     - name: done
-      run: echo 'done!'
+      run: echo 'all done!'
