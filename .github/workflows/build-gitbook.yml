@@ -28,7 +28,7 @@ jobs:
       uses: actions/setup-node@v1.4.2
       with:
         node-version: ${{ matrix.node-version }}
- 
+
     - name: set up gitbook
       run: |
         npm install -g gitbook-cli
@@ -36,10 +36,10 @@ jobs:
         gitbook -v
         gitbook install
       
-    - name: 生成_book
-    - run: gitbook build
+    - name: build
+      run: gitbook build
     
-    - name: push文件
+    - name: push
       run: |
         cd ./_book
         git init
@@ -48,3 +48,5 @@ jobs:
         git add *
         git commit -m "update gh-page from github actions"
         git push --force  "https://${{ secrets.U_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" gh-page
+    - name: done
+      run: echo 'done!'
