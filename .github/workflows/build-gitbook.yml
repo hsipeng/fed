@@ -25,13 +25,16 @@ jobs:
 
     # Runs a set of commands using the runners shell
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v1.4.2
       with:
         node-version: ${{ matrix.node-version }}
-    - run: npm install -g gitbook-cli
-    - run: npm install -g gitbook-summary
-    - run: gitbook -v
-    - run: gitbook install
+ 
+    - name: set up gitbook
+      run: |
+        npm install -g gitbook-cli
+        npm install -g gitbook-summary
+        gitbook -v
+        gitbook install
       
     - name: 生成_book
     - run: gitbook build
@@ -45,6 +48,3 @@ jobs:
         git add *
         git commit -m "update gh-page from github actions"
         git push --force  "https://${{ secrets.U_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" gh-page
-        
-      env:
-        CI: true
