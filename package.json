@@ -1,0 +1,15 @@
+{
+  "name": "fed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/lirawx/fed.git",
+  "author": "lirawx <lira_wx@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gitbook serve",
+    "build": "gitbook build"
+  },
+  "dependencies": {
+    "gitbook-plugin-toggle-chapters": "^0.0.3"
+  }
+}
