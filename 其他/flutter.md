@@ -45,7 +45,7 @@ flutter build iOS —release
 * 2.  打包或者下载依赖包时，需要替换依赖包中的gradle 配置
 	* 首先是项目本身 `android\build.gradle` 中替换 `maven` 源
     
-```text
+```
  maven { url ‘https://maven.aliyun.com/repository/google’ }
         maven { url ‘https://maven.aliyun.com/repository/jcenter’ }
         maven { url ‘http://maven.aliyun.com/nexus/content/groups/public’}
@@ -58,7 +58,7 @@ flutter build iOS —release
 
 	* 第三方依赖包时有可能也需要换源， 以  `shared_preferences` 为例 我的flutter 安装目录为 `C:\flutter`. 那么的安装路径为 `C:\flutter\.pub-cache\hosted\pub.flutter-io.cn\shared_preferences-0.5.7+3\android\build.gradle` 同样替换
 
-````text
+```
         maven { url ‘https://maven.aliyun.com/repository/google’ }
         maven { url ‘https://maven.aliyun.com/repository/jcenter’ }
         maven { url ‘http://maven.aliyun.com/nexus/content/groups/public’}

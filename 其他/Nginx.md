@@ -20,7 +20,7 @@
 ## 基本配置
 ![](https://user-gold-cdn.xitu.io/2019/3/11/1696a118b4910728?imageView2/0/w/1280/h/960/ignore-error/1)
 
-```conf
+```
 events { 
 
 }
@@ -90,7 +90,7 @@ server {
 ```
 
 ## 静态资源服务器
-```conf
+```
 location ~* \.(png|gif|jpg|jpeg)$ {
     root    /root/static/;  
     autoindex on;
