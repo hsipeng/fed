@@ -1,0 +1,50 @@
+# This is a basic workflow to help you get started with Actions
+
+name: build-html
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a set of commands using the runners shell
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install -g gitbook-cli
+    - run: npm install -g gitbook-summary
+    - run: gitbook -v
+    - run: gitbook install
+      
+    - name: 生成_book
+    - run: gitbook build
+    
+    - name: push文件
+      run: |
+        cd ./_book
+        git init
+        git config --local user.name "${{ secrets.U_NAME }}"
+        git config --local user.email "${{ secrets.U_EMAIL }}"
+        git add *
+        git commit -m "update gh-page from github actions"
+        git push --force  "https://${{ secrets.U_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" gh-page
+        
+      env:
+        CI: true
