@@ -45,8 +45,8 @@ jobs:
         git init
         git config --local user.name "${{ secrets.U_NAME }}"
         git config --local user.email "${{ secrets.U_EMAIL }}"
-        git add *
+        git add .
         git commit -m "update gh-page from github actions"
-        git push --force  "https://${{ secrets.U_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }}" gh-page
+        git push --force  https://${{ secrets.U_NAME }}:${{ secrets.GH_TOKEN }}@${{ secrets.GH_REF }} master
     - name: done
       run: echo 'all done!'
