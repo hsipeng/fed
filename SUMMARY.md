@@ -27,6 +27,7 @@
   * [this](./Javascript/this.md)
   
 * [算法](./算法/readme.md)
+  * [常用排序查找](./算法/常用排序查找.md)
 
 * [Nodejs](./Nodejs/readme.md)
   * [koa](./Nodejs/koa.md)
@@ -42,6 +43,7 @@
 
 * [Typescript](./Typescript/readme.md)
   * [Typescript 总结](./Typescript/typescript.md)
+  * [typescript检测原理](./Typescript/typescript检测原理.md)
 
 * [Redux](./Redux/readme.md)
   * [Redux 原理](./Redux/Redux原理.md)
@@ -51,6 +53,9 @@
   * [React-hooks](./React/React-hooks.md)
   * [Fiber 原理](./React/fiber.md)
   * [React的代码复用](./React/代码复用.md)
+  * [React事件底层实现](./React/React事件底层实现.md)
+  * [setState机制](./React/setState.md)
+  * [React diff 算法](./React/diff算法.md)
 
 * [多端开发](./多端/readme.md)
   * [小程序](./多端/小程序.md)
@@ -61,6 +66,7 @@
   * [虚拟DOM](./框架原理/虚拟DOM.md)
   * [EventBus](./框架原理/EventBus.md)
   * [双向绑定的实现](./框架原理/双向绑定的实现.md)
+  * [前端路由的实现](./框架原理/前端路由.md)
 
 * [面经](./面经/readme.md)
   * [面试整理1](./面经/面试整理1.md)
@@ -76,6 +82,7 @@
 * [flutter](./其他/flutter.md)
 * [rust](./其他/rust.md)
 * [docker](./其他/docker.md)
+* [swift](./其他/swift.md)
 
 ## 总结
 * [总结](./总结.md)
