@@ -1,1 +1,3 @@
-# Javascript
+# React
+
+React 是现在流行的框架之一，社区也是最活跃的一个，16.8 更是引入来 HOOKS 来解决代码逻辑复用的功能。不是最完美，但很合适的一个框架。将 JSX 和 Virtual DOM 融合的一个前端UI框架。

@@ -25,6 +25,7 @@
   * [JSONP原理](./Javascript/JSONP原理.md)
   * [Promise](./Javascript/Promise.md)
   * [this](./Javascript/this.md)
+  * [浮点数](./Javascript/浮点数.md)
   
 * [算法](./算法/readme.md)
   * [常用排序查找](./算法/常用排序查找.md)
@@ -47,6 +48,7 @@
 
 * [Redux](./Redux/readme.md)
   * [Redux 原理](./Redux/Redux原理.md)
+  * [数据流管理比较](./Redux/数据流管理比较.md)
 
 * [React](./React/readme.md)
   * [React 生命周期](./React/React生命周期.md)
@@ -56,6 +58,9 @@
   * [React事件底层实现](./React/React事件底层实现.md)
   * [setState机制](./React/setState.md)
   * [React diff 算法](./React/diff算法.md)
+
+* [Vue](./Vue/readme.md)
+  * [Vue](./Vue/Vue.md)
 
 * [多端开发](./多端/readme.md)
   * [小程序](./多端/小程序.md)

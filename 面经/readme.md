@@ -1,5 +1,23 @@
 # 面经
 
+
+## 查漏补缺
+
+[查漏补缺](https://juejin.im/post/5f1412ad6fb9a07e944eff6b?utm_source=gold_browser_extension)
+
+
+面试题集锦
+
+Javascript
+
+[66题](https://juejin.im/post/5ef8377f6fb9a07e693a6061?utm_source=gold_browser_extension#heading-3)
+
+css 相关
+
+[css 33题](https://juejin.im/post/5f1f7c175188252e697df7f4?utm_source=gold_browser_extension)
+
+## 其他
+
 一年半经验前端社招7家大厂&独角兽全过经历
  [https://juejin.im/post/5e8d5a48f265da47ce6cb21f?utm_source=gold_browser_extension#heading-29](https://juejin.im/post/5e8d5a48f265da47ce6cb21f?utm_source=gold_browser_extension#heading-29) 
 
